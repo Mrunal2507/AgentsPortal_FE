@@ -1,0 +1,427 @@
+<div style="background-color: rgb(246, 248, 252)">
+  <div style="padding-left: 2.8cm; padding-top: 2.8cm; position: relative">
+    <table style="position: fixed; top: 2.2cm; margin-left: 0.1cm; z-index: 1">
+      <tr>
+        <td>
+          <h2 style="width: 5cm">CG Protect Form</h2>
+        </td>
+        <td>
+          <img
+            src="assets/share.png"
+            height="17"
+            style="
+              margin-left: 22.8cm;
+              width: 0.4cm;
+              position: fixed;
+              margin-top: -0.4cm;
+            "
+          />
+        </td>
+        <td>
+          <img
+            src="assets/WA.png"
+            height="30"
+            style="margin-left: 23.8cm; position: fixed; margin-top: -0.6cm"
+          />
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <form [formGroup]="AddForm">
+    <mat-stepper
+      [linear]="isLinear"
+      #stepper
+      style="background-color: rgb(246, 248, 252)"
+    >
+      <mat-step>
+        <div formGroupName="personal">
+          <ng-template matStepLabel></ng-template>
+          <table>
+            <tr>
+              <td>
+                <p style="margin-left: 3.55cm; font-size: medium">First Name</p>
+              </td>
+              <td>
+                <p style="margin-left: 3.55cm; font-size: medium">Last Name</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-form-field>
+                  <input
+                    matInput
+                    placeholder="First name"
+                    formControlName="firstName"
+                    style="margin-top: -0.2cm"
+                  />
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field>
+                  <input
+                    matInput
+                    placeholder="Last name"
+                    formControlName="lastName"
+                    style="margin-top: -0.2cm"
+                  />
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>
+                <p style="margin-left: 3.55cm; font-size: medium">
+                  Phone Number
+                </p>
+              </td>
+              <td>
+                <p style="margin-left: 3.55cm; font-size: medium">
+                  Email Address
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-form-field>
+                  <input
+                    matInput
+                    placeholder="Phone Number"
+                    formControlName="phoneNumber"
+                    style="margin-top: -0.2cm"
+                  />
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field>
+                  <input
+                    matInput
+                    placeholder="Email Address"
+                    formControlName="emailAddress"
+                    style="margin-top: -0.2cm"
+                  />
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>
+                <p style="margin-left: 3.55cm; font-size: medium">
+                  Date Of Birth
+                </p>
+              </td>
+              <td>
+                <p style="margin-left: 3.55cm; font-size: medium">Pincode</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-form-field>
+                  <input
+                    matInput
+                    placeholder="Date Of Birth"
+                    formControlName="dateOfBirth"
+                    style="margin-top: -0.2cm"
+                  />
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field>
+                  <input
+                    matInput
+                    placeholder="Pincode"
+                    formControlName="pincode"
+                    style="margin-top: -0.2cm"
+                  />
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+
+          <p style="margin-left: 3.55cm; font-size: medium">Gender</p>
+          <ng-template matStepLabel>Step 1</ng-template>
+          <mat-form-field>
+            <input
+              matInput
+              formControlName="gender"
+              placeholder="Gender"
+              style="margin-top: -0.2cm"
+            />
+          </mat-form-field>
+          <table>
+            <tr>
+              <td>
+                <p style="margin-left: 3.55cm; font-size: medium">
+                  Do You Smoke?
+                </p>
+              </td>
+              <td>
+                <p style="margin-left: 3.55cm; font-size: medium">
+                  Do You Consume Alcohol?
+                </p>
+              </td>
+            </tr>
+            <td>
+              <mat-form-field>
+                <input
+                  matInput
+                  placeholder="Do You Smoke"
+                  formControlName="doYouSmoke"
+                  style="margin-top: -0.2cm"
+                />
+              </mat-form-field>
+            </td>
+            <td>
+              <mat-form-field>
+                <input
+                  matInput
+                  placeholder="Do You Consume Alcohol"
+                  formControlName="doYouConsumeAlcohol"
+                  style="margin-top: -0.2cm"
+                />
+              </mat-form-field>
+            </td>
+          </table>
+          <table>
+            <tr>
+              <td>
+                <p style="margin-left: 3.55cm; font-size: medium">Address</p>
+              </td>
+              <td><p style="margin-left: 3.55cm; font-size: medium">Age</p></td>
+            </tr>
+            <tr>
+              <div>
+                <td>
+                  <mat-form-field style="height: 4cm">
+                    <input
+                      matInput
+                      placeholder="Address"
+                      formControlName="address"
+                      style="margin-top: -0.2cm"
+                    />
+                  </mat-form-field>
+                </td>
+              </div>
+
+              <td>
+                <mat-form-field style="margin-top: -2cm">
+                  <input
+                    matInput
+                    placeholder="Age"
+                    formControlName="birthday"
+                  />
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+          <p style="margin-left: 3.55cm; font-size: medium">Add Dependents</p>
+          <mat-form-field>
+            <input
+              matInput
+              placeholder="Add Dependents"
+              formControlName="addDependents"
+              style="margin-top: -0.2cm"
+            />
+          </mat-form-field>
+          <footer
+            style="
+              position: fixed;
+              z-index: 0;
+              bottom: 0;
+              box-shadow: 0 -1px 10px 1px rgba(186, 179, 179, 0.879);
+              height: 1.65cm;
+              width: 100%;
+              background-color: #fff;
+              margin-left: 1cm;
+            "
+          >
+            <button mat-raised-button color="primary" matStepperNext>
+              Next
+            </button>
+          </footer>
+        </div>
+      </mat-step>
+      <mat-step>
+        <div formGroupName="income">
+          <div>
+            <p style="margin-left: 3.55cm; font-size: medium">Annual Income</p>
+            <mat-form-field>
+              <input
+                matInput
+                formControlName="annualIncome"
+                placeholder="Annual Income"
+                style="margin-top: -0.2cm"
+              />
+            </mat-form-field>
+          </div>
+          <div>
+            <p style="margin-left: 3.55cm; font-size: medium">
+              Government Rebate
+            </p>
+            <mat-form-field>
+              <input
+                matInput
+                formControlName="money1"
+                placeholder="Govt Rebate"
+                style="margin-top: -0.2cm"
+              />
+            </mat-form-field>
+          </div>
+          <div>
+            <p style="margin-left: 3.55cm; font-size: medium">Tax Rebate</p>
+            <mat-form-field>
+              <input
+                matInput
+                formControlName="money2"
+                placeholder="Tax Rebate"
+                style="margin-top: -0.2cm"
+              />
+            </mat-form-field>
+          </div>
+          <footer
+            style="
+              position: fixed;
+              z-index: 0;
+              bottom: 0;
+              box-shadow: 0 -1px 10px 1px rgba(186, 179, 179, 0.879);
+              height: 1.65cm;
+              width: 100%;
+              background-color: #fff;
+              margin-left: 1cm;
+            "
+          >
+            <!-- <button mat-flat-button color="primary" matStepperPrevious>Back</button> -->
+            <button mat-raised-button color="primary" matStepperNext>
+              Next
+            </button>
+          </footer>
+        </div>
+      </mat-step>
+      <mat-step>
+        <div formGroupName="documents">
+          <table>
+            <tr>
+              <td>
+                <p style="margin-left: 3.55cm; font-size: medium">
+                  Identity Proof
+                </p>
+                <mat-form-field>
+                  <input
+                    matInput
+                    formControlName="identityName"
+                    placeholder="Identity Proof"
+                    style="margin-top: -0.2cm"
+                  />
+                </mat-form-field>
+              </td>
+              <td>
+                <p style="margin-left: 3.55cm; font-size: medium">
+                  Financial Proof
+                </p>
+                <mat-form-field>
+                  <input
+                    matInput
+                    formControlName="financialName"
+                    placeholder="Financial Proof"
+                    style="margin-top: -0.2cm"
+                  />
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+          <footer
+            style="
+              position: fixed;
+              z-index: 0;
+              bottom: 0;
+              box-shadow: 0 -1px 10px 1px rgba(186, 179, 179, 0.879);
+              height: 1.65cm;
+              width: 100%;
+              background-color: #fff;
+              margin-left: 1cm;
+            "
+          >
+            <!-- <button mat-flat-button color="primary" matStepperPrevious>Back</button> -->
+            <button mat-raised-button color="primary" matStepperNext>
+              Next
+            </button>
+          </footer>
+        </div>
+      </mat-step>
+      <mat-step>
+        <form
+          style="
+            margin-left: 3.4cm;
+            background-color: white;
+            width: 27.5cm;
+            border-radius: 22px;
+            margin-top: -1cm;
+          "
+        >
+          <div class="card-body p-4 p-md-5">
+            <form>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <label class="form-label" for="firstName"
+                      ><b style="color: rgb(132, 132, 132)"
+                        >Quotation Reference</b
+                      ></label
+                    >
+                    <p><b>GRH/3345</b></p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <label class="form-label" for="firstName"
+                      ><b style="color: rgb(132, 132, 132)"
+                        >Quotation Reference</b
+                      ></label
+                    >
+                    <p><b>$ 70 per week</b></p>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <label class="form-label" for="firstName"
+                      ><b style="color: rgb(132, 132, 132)">Product</b></label
+                    >
+                    <p><b>CG Protect</b></p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <label class="form-label" for="firstName"
+                      ><b style="color: rgb(132, 132, 132)"
+                        >Sum insured upto</b
+                      ></label
+                    >
+                    <p><b>$ 200,000</b></p>
+                  </div>
+                </div>
+                <button
+                  class="btn btn-primary"
+                  style="
+                    border-radius: 15px;
+                    width: 4.2cm;
+                    color: #2391e0;
+                    background-color: #fff;
+                    border-color: #2391e0;
+                    margin-left: 0.7cm;
+                  "
+                >
+                  <b>VIEW BENIFITS</b>
+                </button>
+              </div>
+            </form>
+          </div>
+        </form>
+      </mat-step>
+    </mat-stepper>
+  </form>
+</div>

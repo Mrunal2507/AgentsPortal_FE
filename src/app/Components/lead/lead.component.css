@@ -1,0 +1,76 @@
+
+  ::ng-deep.mdc-text-field--filled:not(.mdc-text-field--disabled){
+    background-color: #fff;
+    border-radius: 17px;
+    width: 11cm;
+    height: 1.3cm;
+    margin-left: 3.5cm;
+   }
+
+  ::ng-deep.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before {
+    border-bottom-color: #fff;
+  }
+
+  ::ng-deep.mat-horizontal-stepper-header-container {
+    /* white-space: nowrap;
+    display: flex; */
+    align-items: center;
+    margin-top: 0.8cm;
+    margin-left: 2.9cm;
+    width: 27.5cm;
+    position: fixed;
+    background-color: rgb(0, 57, 97);
+    border: 3px;
+    border-radius: 12px;
+}
+
+::ng-deep.mat-horizontal-stepper-content:not(.mat-horizontal-stepper-content-inactive) {
+  visibility: inherit !important;
+  margin-top: -0.1cm;
+  margin-left: -1.1cm;
+}
+
+::ng-deep.mat-mdc-form-field .mat-mdc-floating-label.mdc-floating-label {
+  line-height: normal;
+  pointer-events: all;
+  
+}
+::ng-deep.mat-mdc-raised-button:not(:disabled) {
+  color: var(--mdc-protected-button-label-text-color, inherit);
+  margin-left: 30.25cm;
+}
+
+::ng-deep.mat-mdc-raised-button:not(:disabled) {
+  background-image: linear-gradient(to right, #0e89e0 0%, #12D8FA  51%, #1FA2FF  100%);
+  background-size: 200% auto;
+  border-radius: 20px;
+  width: 1.9cm;
+  height: 1cm;
+  margin-top: 0.35cm;
+}
+
+::ng-deep.mat-horizontal-content-container {
+  overflow: hidden;
+  padding: 0 24px 24px 24px;
+  margin-top: 4.2cm;
+}
+
+::ng-deep.mat-mdc-flat-button:not(:disabled) {
+  color: var(--mdc-protected-button-label-text-color, inherit);
+  margin-left: 2cm;
+}
+
+::ng-deep.mat-step-header .mat-step-icon {
+  background-color: #fff;
+  color: #000;
+  margin-left: 1cm;
+}
+
+::ng-deep.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+  background-color: #01bfff;
+  color: #ffffff;
+}
+
+::ng-deep.mat-stepper-horizontal-line {
+  border-top-color: #fff;
+}

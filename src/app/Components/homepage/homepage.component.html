@@ -1,0 +1,315 @@
+<!-- Navbar -->
+<nav
+  class="navbar navbar-expand-lg navbar-light bg-light"
+  style="
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 1.6cm;
+  "
+>
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img
+          src="assets/logo.png"
+          height="35"
+          alt="MDB Logo"
+          loading="lazy"
+          style="margin-left: -0.6cm"
+        />
+      </a>
+      <!-- Left links -->
+      <h4
+        style="
+          color: rgb(7, 55, 114);
+          margin-left: -0.2cm;
+          margin-top: 0.3cm;
+          font-size: 0.5cm;
+        "
+      >
+        <b>Agent's Portal</b>
+      </h4>
+
+      <div>
+        <div class="searchBar">
+          <input
+            id="searchQueryInput"
+            type="text"
+            name="searchQueryInput"
+            placeholder="|  Search Keyword"
+            value=""
+          />
+          <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+            <svg
+              style="margin-left: -15.5cm; width: 26px; height: 21px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#666666"
+                d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Icon -->
+      <div style="margin-left: 12.9cm">
+        <img src="assets/notify.png" height="28" />
+      </div>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <!-- Avatar -->
+      <div class="dropdown">
+        <a>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/10542/10542846.png"
+            class="rounded-circle"
+            height="30"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+            style="position: fixed; margin-top: -0.4cm; margin-left: -1cm"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+
+<div class="area"></div>
+<nav class="main-menu">
+  <ul>
+    <div></div>
+    <li>
+      <a href="#">
+        <img
+          src="assets/arrow.PNG"
+          height="25"
+          style="margin-left: 0.6cm; margin-top: 0.3cm"
+          class="arrow"
+        />
+      </a>
+    </li>
+    <pre></pre>
+    <li class="has-subnav">
+      <a href="#" routerLink="/buttons" style="margin-top: 0.7cm">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="25"
+          fill="currentColor"
+          class="bi bi-grid"
+          viewBox="0 0 16 16"
+          style="margin-left: 0.7cm"
+          (click)="setActiveLink('dashboard')"
+          [ngClass]="{
+            'nav-svg': true,
+            active: activeLink === 'dashboard'
+          }"
+          class="nav-svg"
+        >
+          <path
+            d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"
+          />
+        </svg>
+        <span
+          class="nav-text"
+          (click)="setActiveLink('dashboard')"
+          [ngClass]="{
+            'nav-text': true,
+            active: activeLink === 'dashboard'
+          }"
+          ><a class="link1"> Dashboard</a>
+        </span>
+      </a>
+    </li>
+    <li class="has-subnav">
+      <a style="margin-top: 0.7cm" routerLink="/addNewLead" href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="25"
+          fill="currentColor"
+          class="bi bi-boxes"
+          viewBox="0 0 16 16"
+          style="margin-left: 0.7cm"
+          (click)="setActiveLink('product categories')"
+          [ngClass]="{
+            'nav-svg': true,
+            active: activeLink === 'product categories'
+          }"
+          class="nav-svg"
+        >
+          <path
+            d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"
+          />
+        </svg>
+        <span
+          class="nav-text"
+          (click)="setActiveLink('product categories')"
+          [ngClass]="{
+            'nav-text': true,
+            active: activeLink === 'product categories'
+          }"
+          ><a class="link1"> Product Categories</a>
+        </span>
+      </a>
+    </li>
+    <pre></pre>
+    <li class="has-subnav">
+      <a style="margin-top: 0.7cm">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="25"
+          height="25"
+          viewBox="0 0 24 24"
+          style="fill: rgb(147, 144, 144); margin-left: 0.65cm"
+        >
+          <path
+            d="M3 5v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2H5c-1.103 0-2 .897-2 2zm16.001 14H5V5h14l.001 14z"
+          ></path>
+          <path d="M11 7h2v10h-2zm4 3h2v7h-2zm-8 2h2v5H7z"></path>
+        </svg>
+        <a
+          style="
+            margin-left: 0.45cm;
+            color: grey;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          "
+        >
+          Lead Management
+        </a>
+      </a>
+    </li>
+    <li>
+      <a style="margin: 0.12cm; margin-top: 0.4cm">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <span
+          class="nav-text"
+          style="
+            color: grey;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          "
+        >
+          Campaigns
+        </span>
+      </a>
+    </li>
+    <li>
+      <a style="margin-top: 0.35cm">
+        <svg
+          class="feather feather-edit-3"
+          fill="none"
+          height="21"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="23"
+          xmlns="http://www.w3.org/2000/svg"
+          style="margin-left: 0.64cm"
+        >
+          <path d="M12 20h9" />
+          <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+        </svg>
+        <a
+          style="
+            margin-left: 0.45cm;
+            color: grey;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          "
+        >
+          Application
+        </a>
+      </a>
+    </li>
+    <li>
+      <a style="margin-top: 0.6cm">
+        <svg
+          viewBox="0 0 70 70"
+          width="36px"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+          style="fill: rgb(147, 144, 144); margin-left: 0.5cm"
+        >
+          <g>
+            <path
+              d="M18.001,40.174c1.841-1.132,4.094-2.016,6.516-2.557c1.5,0.668,3.095,1.097,4.722,1.279   c1.043-0.376,2.119-0.707,3.223-0.975c-0.712-0.877-1.286-1.869-1.704-2.938c-2.058-0.042-3.989-0.598-5.67-1.554   c-4.024,0.687-7.581,2.157-10.219,4.02C14.358,37.81,14.033,38.376,14,39l0.003,5.895C13.943,46.039,14.854,47,16,47h5.009l0-0.999   l0-0.079l0.004-0.079c0.055-1.053,0.442-2.036,1.084-2.843h-4.094L18.001,40.174z"
+            />
+            <path
+              d="M30.041,31.938C30.015,31.629,30,31.316,30,31c0-1.061,0.159-2.084,0.441-3.056c-1.943-0.271-3.449-1.927-3.449-3.944   c0-2.206,1.794-4,4-4c1.53,0,2.846,0.873,3.519,2.138c1.075-0.789,2.295-1.386,3.616-1.744C36.807,17.789,34.111,16,30.992,16   c-4.418,0-8,3.582-8,8C22.992,28.096,26.072,31.468,30.041,31.938z"
+            />
+            <path
+              d="M55.191,44.329c-2.156-1.624-5.23-2.919-8.723-3.656C44.828,41.515,42.975,42,41.008,42c-2.15,0-4.165-0.576-5.913-1.57   c-4.024,0.687-7.581,2.157-10.219,4.02c-0.511,0.361-0.836,0.926-0.869,1.55l0.003,5.895C23.951,53.039,24.863,54,26.008,54h27.995   c1.064,0,1.942-0.833,1.997-1.895l0.007-6.155C56.008,45.31,55.702,44.714,55.191,44.329z M52.002,50H28.01l-0.001-2.826   c1.841-1.132,4.094-2.016,6.516-2.557C36.564,45.525,38.777,46,41.008,46c2.029,0,3.996-0.377,5.866-1.122   c1.989,0.523,3.756,1.25,5.132,2.112L52.002,50z"
+            />
+            <path
+              d="M33,31c0,4.418,3.582,8,8,8s8-3.582,8-8s-3.582-8-8-8S33,26.582,33,31z M41,27c2.206,0,4,1.794,4,4c0,2.206-1.794,4-4,4   s-4-1.794-4-4C37,28.794,38.794,27,41,27z"
+            />
+          </g>
+        </svg>
+        <a
+          style="
+            margin-left: 0.22cm;
+            color: grey;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          "
+        >
+          My Contacts
+        </a>
+      </a>
+    </li>
+    <li>
+      <a style="margin-top: 0.6cm">
+        <svg
+          height="22px"
+          viewBox="0 0 32 32"
+          width="24px"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+          style="fill: rgb(147, 144, 144); margin-left: 0.68cm"
+        >
+          <g id="background"><rect fill="none" height="32" width="32" /></g>
+          <g id="document_x5F_text">
+            <polygon points="4,22 4,20 16,20 16,22 4,22  " />
+            <polygon points="4,14 4,12 20,12 20,14 4,14  " />
+            <polygon points="4,18 4,16 20,16 20,18 4,18  " />
+            <path
+              d="M18.414,0H0v32h24V5.584L18.414,0z M17.998,2.413L21.586,6h-3.588V2.413z M2,30V1.998h14v6.001h6V30H2z"
+            />
+          </g>
+        </svg>
+        <a
+          style="
+            margin-left: 0.38cm;
+            color: grey;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          "
+        >
+          Claims
+        </a>
+      </a>
+    </li>
+  </ul>
+</nav>
